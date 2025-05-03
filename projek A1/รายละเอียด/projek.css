@@ -1,0 +1,32 @@
+html, body{
+    background-color: rgb(255, 252, 252);
+    margin: 0;
+    padding: 0;
+
+}
+.หัวข้อ {
+    padding: 15px;
+    text-align: center;
+    font-size: 400%;
+    background-color: gray;
+    
+}
+.herd{
+    background-color: black;
+}
+.menu{
+    color: aliceblue;
+    padding: 20px;
+    display: inline-block;
+}
+.credid{
+    color: aliceblue;
+    font-size: 15px;
+}
+.photoอนุบาล{
+    display: flex;
+}
+.บทเรียนอนุบาล{
+    width: 100%;
+    padding: 2rem;
+}
