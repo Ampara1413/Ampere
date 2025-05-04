@@ -1,32 +1,120 @@
 html, body{
-    background-color: rgb(255, 252, 252);
     margin: 0;
-    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background 1s;
+    background-color: #000000;
+}
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 
 }
 .หัวข้อ {
     padding: 15px;
     text-align: center;
-    font-size: 400%;
-    background-color: gray;
-    
+    font-size: 100px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 .herd{
     background-color: black;
+    box-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0);
+    animation: fadeIn 1s ease-in forwards;
+}
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 .menu{
     color: aliceblue;
     padding: 20px;
     display: inline-block;
+    transition: transform 0.4s cubic-bezier(0.25,0.8,0.25,1);
+    animation: fadeIn 1s ease-in forwards;
 }
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.menu:hover{
+    transform: scale(1.2);
+}
+
 .credid{
     color: aliceblue;
     font-size: 15px;
 }
-.photoอนุบาล{
+.ตรงกลาง{
+
+    text-decoration: none;
+    padding: 2rem; 
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    content: "";
+    z-index: 5;
+    margin: 30px auto;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgb(217, 255, 0), 0 0 20px rgb(255, 255, 255);
+    width: fit-content;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffe600;
+    text-align: center;
     display: flex;
+    transition: transform 0.4s cubic-bezier(0.25,0.8,0.25,1);
+    text-shadow: 
+    0 0 5px #ff0000,
+    0 0 10px #2bff00,
+    0 0 20px #2600ff;
+    animation: fadeIn 1s ease-in forwards;
 }
-.บทเรียนอนุบาล{
-    width: 100%;
-    padding: 2rem;
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.ตรงกลาง:hover{
+    transform: scale(1.2);
+}
+.gen{
+    color: #000000;
+    font-size: 50px;
+    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(255, 255, 255);
+    background: #ffffff;
+    font-weight: bold;
+    margin: 30px auto;
+    z-index: 5;  
+    border-radius: 15px;
+}
+.เนื้อหา{
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
 }

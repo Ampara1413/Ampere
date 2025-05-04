@@ -9,8 +9,28 @@
    <link rel="stylesheet" href="projek_อนุบาล.html">
    <link rel="stylesheet" href="projek.css">
    <link rel="stylesheet" href="projek.js">
+   <link href="1.jpg">
+   <link href="2.jpg">
+   <link href="3.jpg">
+   <link href="4.jpg">
+    <link href="song.mp3">
 </head>
-<body>
+
+<body >
+    <audio autoplay loop>
+        <source src="song.mp3" type="audio/mpeg">
+        เบราว์เซอร์ของคุณไม่รองรับการเล่นเสียง
+      </audio>
+    <script>
+        const imgs = ["1.jpg", "2.jpg", "3.jpg","4.jpg"]; // เปลี่ยนชื่อไฟล์ตามภาพของ Ampere
+        let i = 0;
+        function loopBackground() {
+          document.body.style.backgroundImage = `url('${imgs[i]}')`;
+          i = (i + 1) % imgs.length;
+          setTimeout(loopBackground, 3000); // เปลี่ยนทุก 3 วิ
+        }
+        loopBackground();
+      </script>
         <header class="head" style="background-color: #000000;">
             <a class="menu">Ampere</a>
             <a class="credid">ผู้จัดทำ: นายทินภัทร ต่อพิทักษ์พงศ์ นักเรียนชั้นมัธยมศึกษาปีที่ 5 โรงเรียนขุขันธ์ ห้องเรียนพิเศษ SMTE</a>
@@ -18,14 +38,11 @@
         </header>
 
 
-    <div class="หัวข้อ">
-    <a>เนื้อหาการเรียน</a>
-    </div>
-    <a style="font-size: 30px; width: 100%; padding: 2rem;">บทเรียนอนุบาล</a> <br>
-    <div class="photoอนุบาล">
-    <a style="font-size: 18px; text-align: left;" class="บทเรียนอนุบาล">“การศึกษาระดับปฐมวัยหรืออนุบาลถือเป็นแหล่งที่สำคัญของการเรียนรู้ตลอดชีวิตเพราะเป็นช่วงวัยที่เด็กมีพัฒนาการอย่างรวดเร็วด้านร่างกายจิตใจ สังคม และคำแนะนำในการพิจารณาหรือรูปแบบการปกครองเด็กในช่วงวัยนี้จึงมีความสำคัญมากขึ้นในบทความนี้ไปจนถึงสำรวจข้อมูลและเนื้อหาการเรียนรู้ของระดับอนุบาลเพื่อเรียนรู้ว่าการเรียนรู้ในช่วงวัยแรกเริ่มนี้ในเซสชั่น”</a><br>
-<img src="images.jpg">
-    </div>
-    <a href="projek_อนุบาล.html"> อนุบาล</a>
+    
+        <a class="ตรงกลาง"  href="projek_อนุบาล.html">กดเพื่อเข้าสู่เนื้อหาอนุบาล</a><br><br>
+   
+        <a class="ตรงกลาง"  href="projek_ประถม.html" >กดเพื่อเข้าสู่เนื้อหาประถม</a><br><br>
+            
+        <a class="ตรงกลาง"  href="projek_มัธยม.html" >กดเพื่อเข้าสู่เนื้อหามัธยม</a>
 </body>
 </html>
