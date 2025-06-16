@@ -1,0 +1,48 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: A1.c build active file",
+			"command": "c:\\Users\\Advicey\\Desktop\\code\\Test C\\C\\A1.c",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "c:\\Users\\Advicey\\Desktop\\code\\Test C\\C"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: c:\\Users\\Advicey\\Desktop\\code\\Test C\\C\\A1.c"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: A1.c build active file",
+			"command": "c:\\Users\\Advicey\\Desktop\\code\\Test C\\C\\A1.c",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "c:\\Users\\Advicey\\Desktop\\code\\Test C\\C"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: c:\\Users\\Advicey\\Desktop\\code\\Test C\\C\\A1.c"
+		}
+	]
+}
